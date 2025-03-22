@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimzxy Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add smooth transitions */
+        .page {
+            display: none;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .page.active {
+            display: block;
+            opacity: 1;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dimzxy Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('shop')">Shop</a></li>
+                <li><a href="#" onclick="showPage('features')">Features</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="page active">
+            <div class="hero">
+                <h2>Welcome to Dimzxy Store</h2>
+                <p>Your one-stop shop for all your needs</p>
+                <a href="https://wa.me/087740794085" class="cta-button">Contact us on WhatsApp</a>
+            </div>
+            <div class="promotion">
+                <h2>Special Promotion!</h2>
+                <p>Get up to 50% off on selected items. Limited time offer!</p>
+            </div>
+        </section>
+        <section id="shop" class="page">
+            <h2>Shop</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="product1.jpg" alt="Product 1">
+                    <h2>Product 1</h2>
+                    <p class="price">$10.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="product2.jpg" alt="Product 2">
+                    <h2>Product 2</h2>
+                    <p class="price">$20.00</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="product3.jpg" alt="Product 3">
+                    <h2>Product 3</h2>
+                    <p class="price">$30.00</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </section>
+        <section id="features" class="page">
+            <h2>Our Features</h2>
+            <div class="feature-category">
+                <h3>Group Features</h3>
+                <ul>
+                    <li>✅ Hidetag</li>
+                    <li>✅ Grup close atau open</li>
+                    <li>✅ Gcname</li>
+                    <li>✅ Gcdesk</li>
+                    <li>✅ Add</li>
+                    <li>✅ Kick</li>
+                    <li>✅ Ownergc</li>
+                    <li>✅ Leave</li>
+                    <li>✅ Promote</li>
+                    <li>✅ Demote</li>
+                    <li>✅ Ephemeral</li>
+                    <li>✅ Vote</li>
+                    <li>✅ Antilink</li>
+                </ul>
+            </div>
+            <div class="feature-category">
+                <h3>Search Features</h3>
+                <ul>
+                    <li>✅ Youtube play</li>
+                    <li>✅ Youtube search</li>
+                    <li>✅ Google & google image</li>
+                    <li>✅ Pinterest</li>
+                    <li>✅ Search Wallpaper</li>
+                    <li>✅ Youtube Search</li>
+                    <li>✅ Spotify Search</li>
+                    <li>✅ Wikimedia</li>
+                    <li>✅ Ringtone</li>
+                    <li>✅ Stalk People</li>
+                    <li>✅ Gsmarena</li>
+                    <li>✅ Kamus KBBI</li>
+                </ul>
+            </div>
+            <div class="feature-category">
+                <h3>Creator Features</h3>
+                <ul>
+                    <li>✅ ATTP & TTP</li>
+                    <li>✅ Sticker To Image/Video/GIF</li>
+                    <li>✅ Emoji Mix</li>
+                    <li>✅ Pinterest</li>
+                    <li>✅ Sticker</li>
+                    <li>✅ Sticker WM</li>
+                    <li>✅ Sticker Meme</li>
+                    <li>✅ KTP Fake Maker</li>
+                    <li>✅ Sertifikat Bucin/Pacaran/Tolol</li>
+                    <li>✅ Translate Kode Biner</li>
+                </ul>
+            </div>
+            <div class="feature-category">
+                <h3>Downloader Features</h3>
+                <ul>
+                    <li>✅ Tiktok WM/No WM/Slide Show</li>
+                    <li>✅ Spotify/Joox/SoundCloud Download</li>
+                    <li>✅ Youtube Music</li>
+                    <li>✅ Youtube Video</li>
+                    <li>✅ Facebook/IG/Twitter Download</li>
+                    <li>✅ ZippyShare Download</li>
+                    <li>✅ Get Music or Get Video</li>
+                </ul>
+            </div>
+            <div class="feature-category">
+                <h3>AI Chat (NEW!)</h3>
+                <ul>
+                    <li>✅ Chat Open AI & Open AI Turbo 3.5</li>
+                    <li>✅ Dall-E & Diffusion (Buat gambar dari AI)</li>
+                    <li>✅ Speech to text</li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact" class="page">
+            <h2>Contact</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Dimzxy Store. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+    <script>
+        function showPage(pageId) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                if (page.id === pageId) {
+                    page.classList.add('active');
+                } else {
+                    page.classList.remove('active');
+                }
+            });
+        }
+
+        // Auto-scroll feature
+        function autoScroll() {
+            window.scrollBy(0, 1);
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                window.scrollTo(0, 0);
+            }
+        }
+
+        setInterval(autoScroll, 50);
+    </script>
+</body>
+</html>
